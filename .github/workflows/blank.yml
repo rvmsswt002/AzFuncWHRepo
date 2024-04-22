@@ -27,5 +27,5 @@ jobs:
         uses: gaoruhao/azure-pipeline-github-action@v1.6
         with: 
          azure-devops-project-url: 'https://dev.azure.com/rvmado/NVS_EH'
-         azure-pipeline-name: 'rvmsswt002.AzFuncWHRepo'
+         azure-pipeline-name: 'rvmsswt002.GitHubActions'
          azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
