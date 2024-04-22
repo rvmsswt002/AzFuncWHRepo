@@ -27,4 +27,4 @@ jobs:
         with: 
          azure-devops-project-url: 'https://dev.azure.com/rvmado/NVS_EH'
          azure-pipeline-name: 'rvmsswt002.AzFuncWHRepo'
-         azure-devops-token: 'r5bqvou3sg7anvzat5shbjworf7uj2uaffbi36srrkj4yhdmxvzq'
+         azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
