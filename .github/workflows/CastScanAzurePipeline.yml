@@ -21,10 +21,12 @@ jobs:
     # Steps represent a seequence of tasks that will be executed as part of the job
     steps:
       - name: Trigger Cast Scan Azure Pipeline
-      - uses: Azure/pipeline@build/v1
+      - uses: Azure/pipelines@v1.2
         with: 
          azure-devops-project-url: 'https://dev.azure.com/rvmado/NVS_EH'
          azure-pipeline-name: 'Application03'
          azure-devops-token: 'r5bqvou3sg7anvzat5shbjworf7uj2uaffbi36srrkj4yhdmxvzq'
+          
+         
 
  
