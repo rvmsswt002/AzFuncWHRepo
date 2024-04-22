@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: 'Private-Build-Agent''
+  name: 'Private-Build-Agent'
 
 steps:
 - script: echo Hello, world!
