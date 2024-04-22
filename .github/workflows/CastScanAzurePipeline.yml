@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Cast AIP Scanning
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "CastScanAzurePipeline"
+  CastScanAzurePipeline:
+    # The type of runner that the job will run on
+    runs-on: self-hosted
+
+    # Steps represent a seequence of tasks that will be executed as part of the job
+    steps:
+      - name: Trigger Cast Scan Azure Pipeline
+      - uses: Azure/pipeline@build/v1
+        with: 
+         azure-devops-project-url: 'https://dev.azure.com/rvmado/NVS_EH'
+         azure-pipeline-name: 'Application03'
+         azure-devops-token: 'r5bqvou3sg7anvzat5shbjworf7uj2uaffbi36srrkj4yhdmxvzq'
+
+ 
