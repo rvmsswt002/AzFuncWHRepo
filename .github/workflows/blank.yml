@@ -9,6 +9,9 @@ on:
 jobs:
   CastScanning:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.5.0]
     steps:
       - name: Azure pipelines actions
         uses: Azure/pipelines@v3.0-node20
