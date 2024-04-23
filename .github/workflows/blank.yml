@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Trigger Cast Scan Azure Pipeline
-        uses: Azure/pipelines@v1.2
+      - uses: Azure/pipelines@v1.2
         with: 
          azure-devops-project-url: 'https://dev.azure.com/rvmado/NVS_EH'
          azure-pipeline-name: 'rvmsswt002.AzFuncWHRepo'
