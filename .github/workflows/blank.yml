@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Azure pipelines actions
-        uses: Azure/pipelines@v2
+        uses: Azure/pipelines@v3
         with: 
          azure-devops-project-url: 'https://dev.azure.com/rvmado/NVS_EH'
          azure-pipeline-name: 'Application03'
